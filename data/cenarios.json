@@ -1,0 +1,59 @@
+    {
+    "cenarios": {
+        "nominal_operacional": {
+        "nome": "Operação Nominal Padrão",
+        "descricao": "Todos os subsistemas do EnviroSat operando dentro dos parâmetros de segurança sem nenhuma anomalia.",
+        "dados": {
+            "sensor_termico_c": 24.5,
+            "bateria_porcentagem": 88.0,
+            "payload_buffer_arquivos": 12,
+            "altitude_desvio_metros": 1.2,
+            "barramento_energia_w": 142.0
+        }
+        },
+        "alerta_de_lixo": {
+        "nome": "Aviso de Saturação de Buffer",
+        "descricao": "O satélite acumulou muitas imagens devido à falta de uma janela de transmissão (downlink), gerando um alerta de atenção.",
+        "dados": {
+            "sensor_termico_c": 28.1,
+            "bateria_porcentagem": 75.0,
+            "payload_buffer_arquivos": 54,
+            "altitude_desvio_metros": -3.5,
+            "barramento_energia_w": 139.5
+        }
+        },
+        "crise_termica_extrema": {
+        "nome": "Superaquecimento de Sensor em Órbita",
+        "descricao": "Cenário crítico onde o sensor térmico ultrapassa os 40°C, ameaçando a integridade do hardware e cegando o monitoramento da Amazônia.",
+        "dados": {
+            "sensor_termico_c": 44.8,
+            "bateria_porcentagem": 61.2,
+            "payload_buffer_arquivos": 5,
+            "altitude_desvio_metros": 0.8,
+            "barramento_energia_w": 148.2
+        }
+        },
+        "apagao_bateria_critica": {
+        "nome": "Subtensão em Eclipse Orbital",
+        "descricao": "Falha crítica de energia. Bateria abaixo do limite de sobrevivência (20%). Risco iminente de perda de controle de atitude.",
+        "dados": {
+            "sensor_termico_c": 19.2,
+            "bateria_porcentagem": 14.5,
+            "payload_buffer_arquivos": 41,
+            "altitude_desvio_metros": 9.4,
+            "barramento_energia_w": 115.0
+        }
+        },
+        "falha_multipla_catastrofe": {
+        "nome": "Decaimento Orbital com Falha de Energia",
+        "descricao": "Pior cenário possível: grande desvio de altitude combinado com bateria crítica. IA deve acionar contingência total imediatamente.",
+        "dados": {
+            "sensor_termico_c": 38.5,
+            "bateria_porcentagem": 11.0,
+            "payload_buffer_arquivos": 58,
+            "altitude_desvio_metros": -14.2,
+            "barramento_energia_w": 110.5
+        }
+        }
+    }
+    }
